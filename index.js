@@ -16,7 +16,12 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-app.use(cors())
+const corsOptions = {
+    origin: 'https://job-board-frontend-269n.vercel.app', // Allow only this origin
+    credentials: true, // Enable credentials
+};
+
+app.use(cors(corsOptions));
 
 
 
