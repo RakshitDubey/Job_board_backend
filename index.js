@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:'https://job-board-frontend-269n.vercel.app',
+    origin:'https://job-board-frontend-mocha.vercel.app',
     credentials:true
 }
 
